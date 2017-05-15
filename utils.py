@@ -1,4 +1,7 @@
 import re
+import os
+import os.path;
+from datetime import datetime;
 
 def filter(all, pat):
     include = []
@@ -29,6 +32,19 @@ def filter(all, pat):
     return list(set(include) - set(exclude))
 #end
 
+def backup(filename):
+    if not os.path.exists(filename):
+        print('file not found')
+        return
+    #end
+
+    filetime = os.path.getmtime(filename)
+    fname, ext = os.path.splitext(filename)
+    dt = datetime.fromtimestamp(filetime).strftime('-%Y%m%d-%H%M%S')
+    os.rename(filename, fname + dt + ext)
+#end
+
 if __name__ == '__main__':
     print(filter(range(1,11), '*, 1-10, -4, -5, -9'))
+    backup('../test.js')
 #end
