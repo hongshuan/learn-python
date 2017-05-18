@@ -17,3 +17,9 @@ a_dict = { 'a': 1, 'b': 2, 'c': 3 }
 
 [ os.path.realpath(f) for f in glob.glob('*.xml') ]
 
+# urllib.parse.parse_qs()
+query = 'username=pilgrim&password=PapayaWhip&email=pilgrim@mail.com'
+a_list = query.split('&')
+a_list_of_lists = [ v.split('='), 1) for v in a_list ]
+a_dict = dict(a_list_of_lists)
+
