@@ -23,3 +23,17 @@ a_list = query.split('&')
 a_list_of_lists = [ v.split('='), 1) for v in a_list ]
 a_dict = dict(a_list_of_lists)
 
+def fib(max):
+    a, b = 0, 1
+    while a < max:
+        yield a
+        a, b = b, a + b
+    #end
+#end
+
+for n in fib(1000):
+    print(n, end=' ')
+
+list(fib(1000))
+
+
