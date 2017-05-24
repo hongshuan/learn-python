@@ -37,3 +37,18 @@ for n in fib(1000):
 list(fib(1000))
 
 
+print('C:\some\name')  # here \n means newline!
+print(r'C:\some\name')  # note the r before the quote
+print("""\
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+""")
+
+list(range(3, 6))
+
+import builtins, sys
+dir(sys)
+dir(builtins)
+
+
