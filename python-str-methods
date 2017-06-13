@@ -1,0 +1,60 @@
+class str(object='')
+class str(object=b'', encoding='utf-8', errors='strict')
+
+str.capitalize()
+str.swapcase()
+str.title()
+str.casefold()
+
+str.count(sub[, start[, end]])
+str.encode(encoding="utf-8", errors="strict")
+
+str.endswith(suffix[, start[, end]])
+str.startswith(prefix[, start[, end]])
+
+str.expandtabs(tabsize=8)
+
+str.find(sub[, start[, end]])
+str.rfind(sub[, start[, end]])
+
+str.index(sub[, start[, end]])
+str.rindex(sub[, start[, end]])
+
+str.format(*args, **kwargs)
+str.format_map(mapping)
+
+str.isalnum()
+str.isalpha()
+str.isdecimal()
+str.isdigit()
+str.isidentifier()
+str.isnumeric()
+str.isprintable()
+str.isspace()
+str.istitle()
+str.islower()
+str.isupper()
+
+str.lower()
+str.upper()
+
+str.join(iterable)
+str.split(sep=None, maxsplit=-1)
+str.rsplit(sep=None, maxsplit=-1)
+str.splitlines([keepends])
+
+str.ljust(width[, fillchar])
+str.rjust(width[, fillchar])
+str.center(width[, fillchar])
+str.zfill(width)
+
+str.strip([chars])
+str.lstrip([chars])
+str.rstrip([chars])
+
+str.partition(sep)
+str.rpartition(sep)
+
+str.replace(old, new[, count])
+
+str.translate(table)

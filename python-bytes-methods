@@ -1,0 +1,56 @@
+Bytes Objects
+=============
+
+class bytes([source[, encoding[, errors]]])
+class bytearray([source[, encoding[, errors]]])
+
+static bytes.maketrans(from, to) //static bytearray.maketrans
+
+bytes.count(sub[, start[, end]]) //bytearray.count
+bytes.decode(encoding="utf-8", errors="strict") //bytearray.decode
+
+bytes.startswith(prefix[, start[, end]]) //bytearray.startswith
+bytes.endswith(suffix[, start[, end]]) //bytearray.endswith
+
+bytes.find(sub[, start[, end]]) //bytearray.find
+bytes.rfind(sub[, start[, end]]) //bytearray.rfind
+
+bytes.index(sub[, start[, end]]) //bytearray.index
+bytes.rindex(sub[, start[, end]]) //bytearray.rindex
+
+bytes.join(iterable) //bytearray.join
+bytes.split(sep=None, maxsplit=-1) //bytearray.split
+bytes.rsplit(sep=None, maxsplit=-1) //bytearray.rsplit
+bytes.splitlines(keepends=False) // bytearray.splitlines
+
+bytes.partition(sep) //bytearray.partition
+bytes.rpartition(sep) //bytearray.rpartition
+
+bytes.replace(old, new[, count]) //bytearray.replace
+bytes.translate(table, delete=b'') //bytearray.translate
+
+bytes.center(width[, fillbyte]) //bytearray.center
+bytes.ljust(width[, fillbyte]) //bytearray.ljust
+bytes.rjust(width[, fillbyte]) //bytearray.rjust
+
+bytes.strip([chars]) //bytearray.strip
+bytes.lstrip([chars]) //bytearray.lstrip
+bytes.rstrip([chars]) //bytearray.rstrip
+
+bytes.capitalize() //bytearray.capitalize
+bytes.expandtabs(tabsize=8) //bytearray.expandtabs
+
+bytes.isalnum() // bytearray.isalnum
+bytes.isalpha() // bytearray.isalpha
+bytes.isdigit() // bytearray.isdigit
+bytes.islower() // bytearray.islower
+bytes.isspace() // bytearray.isspace
+bytes.istitle() // bytearray.istitle
+bytes.isupper() // bytearray.isupper
+bytes.lower() // bytearray.lower
+bytes.upper() // bytearray.upper
+
+bytes.swapcase() // bytearray.swapcase
+bytes.title() // bytearray.title
+
+bytes.zfill(width) // bytearray.zfill
